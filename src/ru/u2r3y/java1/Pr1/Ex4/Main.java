@@ -1,4 +1,4 @@
-package ru.u2r3y.java1.Ex2;
+package ru.u2r3y.java1.Pr1.Ex4;
 
 public class Main {
     public static void main(String[] args) {
