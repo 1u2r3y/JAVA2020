@@ -8,7 +8,7 @@ public class DogKennel {
             dogs[SIZE] = newDogs[i];
             SIZE++;
         }
-        for (int i = 0; i < newDogs.length; i++) {
+        for (int i = 0; i < SIZE; i++) {
             System.out.println(dogs[i].toString());
         }
     }

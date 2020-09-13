@@ -13,7 +13,8 @@ public class Main {
         Dog dog4 = new Dog("Molly", 3);
         Dog dog5 = new Dog("Boy", 2);
         DogKennel nursery = new DogKennel();
-        nursery.add(dog1, dog2, dog3, dog4, dog5);
+        nursery.add(dog1, dog2, dog3);
+        nursery.add(dog4, dog5);
         System.out.println("Age " + dog1.getName() + " into human = " + dog1.intoHuman());
         System.out.println("Age " + dog2.getName() + " into human = " + dog2.intoHuman());
         System.out.println("Age " + dog3.getName() + " into human = " + dog3.intoHuman());
