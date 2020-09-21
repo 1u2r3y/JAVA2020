@@ -1,6 +1,6 @@
 package ru.u2r3y.java1.Pr6;
 
-public class MovableRectangle implements Movable {
+public class MovableRectangle extends Rectangle implements Movable {
     private MovablePoint topLeft;
     private MovablePoint bottomRight;
 
