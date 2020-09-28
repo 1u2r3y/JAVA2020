@@ -2,12 +2,14 @@ package ru.u2r3y.java1.Pr7;
 
 public class Sofa extends Furniture{
     protected String size;
-    protected double price;
+    protected String material;
+    protected String color;
 
-    public Sofa(String material, String color, String size, double price) {
-        super(material, color);
+    public Sofa(int price, String size, String material, String color) {
+        super(price);
         this.size = size;
-        this.price = price;
+        this.material = material;
+        this.color = color;
     }
 
     public String getSize() {
@@ -18,41 +20,39 @@ public class Sofa extends Furniture{
         this.size = size;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    @Override
     public String getMaterial() {
-        return super.getMaterial();
+        return material;
     }
 
-    @Override
     public void setMaterial(String material) {
-        super.setMaterial(material);
+        this.material = material;
     }
 
-    @Override
     public String getColor() {
-        return super.getColor();
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     @Override
-    public void setColor(String color) {
-        super.setColor(color);
+    public int getPrice() {
+        return super.getPrice();
+    }
+
+    @Override
+    public void setPrice(int price) {
+        super.setPrice(price);
     }
 
     @Override
     public String toString() {
         return "Sofa{" +
                 "size='" + size + '\'' +
-                ", price=" + price +
                 ", material='" + material + '\'' +
                 ", color='" + color + '\'' +
+                ", price=" + price +
                 '}';
     }
 }
