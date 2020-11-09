@@ -53,7 +53,7 @@ public class Student{
     }
 
     public boolean compareTo(String fio){
-        if (this.getFio() == fio) {
+        if (this.getFio().equals(fio)) {
             return true;
         }
         return false;

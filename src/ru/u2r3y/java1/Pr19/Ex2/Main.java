@@ -22,7 +22,7 @@ public class Main extends Students{
         Scanner scanner = new Scanner(System.in);
         String fio = scanner.nextLine();
         try {
-                if (Search(students, "werty")) {
+                if (Search(students, fio)) {
                     System.out.println("Found");
                 } else {
                     throw (new Exception());
